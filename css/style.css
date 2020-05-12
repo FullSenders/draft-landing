@@ -1,0 +1,170 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  background: #ffffff;
+  background-image: url('../img/paper.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #fff;
+  padding: 20px;
+}
+
+a:hover, a:active, a:focus {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+/* QUACK */
+
+@keyframes scale-img-down-in {
+  from { transform: scale(1); }
+  to { transform: scale(0.8); }
+}
+@keyframes scale-img-down-out {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.0); }
+}
+@keyframes scale-text-up-in {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+@keyframes scale-text-up-out {
+  from { transform: scale(1.1); }
+  to { transform: scale(1); }
+}
+
+.footer-a {
+  display: inline-block;
+  animation: scale-text-up-out;
+  animation-duration: 0.2s;
+  color: #fff;
+}
+.footer-a:hover {
+  animation: scale-text-up-in;
+  animation-duration: 0.3s;
+  transform: scale(1.1);
+  color: #fff;
+}
+
+/* END QUACK */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "American Typewriter", sans-serif;
+  font-weight: 400;
+  color: #8D0000;
+  /* margin: 0 0 20px 0; */
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/*--------------------------------------------------------------
+# Cursor
+--------------------------------------------------------------*/
+
+.blinking-cursor {
+  font-weight: 300;
+  font-size: 100px;
+  color: #8D0000;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #8D0000;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #8D0000;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #8D0000;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #8D0000;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #8D0000;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #8D0000;
+  padding-top: 20px;
+  color: #fff;
+  font-family: "American Typewriter", sans-serif;
+  font-size: 14px;
+  height: 14;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-bottom: -70px;
+  color: #ffffff;
+}
+
+#footer .bottom-img {
+  text-align: center;
+}
